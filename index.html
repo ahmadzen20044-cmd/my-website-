@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات الجامعة الافتراضية السورية - الصفحة الرئيسية</title>
+    <!-- CSS Bootstrap 5 عبر CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- CSS الخاص بالمهام -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">دليل الفعاليات | SVU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- البانر الرئيسي الترحيبي والمعلومات الأساسية للفريق -->
+    <main>
+        <section class="hero-banner text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">دليل فعاليات الجامعة الافتراضية السورية</h1>
+                <p class="lead">منصتك الأولى لمعرفة كافة الندوات والورشات والأنشطة الأكاديمية والثقافية.</p>
+                <div class="mt-3 p-2 bg-light text-dark rounded d-inline-block">
+                    <small><strong>فريق إعداد المشروع (IDs):</strong> Ahmad_367214 | Azez_346426 | Shahed_448477</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الفعاليات البارزة هذا الأسبوع (Carousel/Slider) -->
+        <section class="container mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">فعاليات بارزة هذا الأسبوع</h2>
+            <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="img/AI.jpg" class="d-block w-100" alt="مؤتمر الذكاء الاصطناعي">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5>مؤتمر الذكاء الاصطناعي في التعليم الافتراضي</h5>
+                            <p>محاضرات وورشات عمل مع خبراء عالميين يوم الخميس القادم.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/معرض مشاريع.jpg" class="d-block w-100" alt="معرض المشاريع">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5>معرض مشاريع التخرج المتميزة 2026</h5>
+                            <p>عرض لأهم الابتكارات البرمجية والهندسية لطلاب الجامعة.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- قسم التصنيفات السريعة -->
+        <section class="container mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">تصنيفات الفعاليات</h2>
+            <div class="d-flex flex-wrap gap-2">
+                <a href="events.html" class="btn btn-outline-primary btn-lg"><span class="badge bg-primary ms-1">أكاديمي</span> ندوات ومحاضرات</a>
+                <a href="events.html" class="btn btn-outline-success btn-lg"><span class="badge bg-success ms-1">تكنولوجيا</span> برمجة وذكاء اصطناعي</a>
+                <a href="events.html" class="btn btn-outline-warning btn-lg text-dark"><span class="badge bg-warning text-dark ms-1">ثقافة</span> ورشات ومعارض</a>
+                <a href="events.html" class="btn btn-outline-danger btn-lg"><span class="badge bg-danger ms-1">رياضة</span> مسابقات طلابية</a>
+            </div>
+        </section>
+
+        <!-- قسم أحدث الفعاليات (شبكة كروت متجاوبة) -->
+        <section class="container mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">أحدث الفعاليات</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/ورشة بناء مواقع.jpg" class="card-img-top" alt="فعالية 1">
+                        <div class="card-body">
+                            <span class="badge bg-info text-dark mb-2">تكنولوجيا</span>
+                            <h5 class="card-title">ورشة عمل: بناء مواقع الويب الحديثة</h5>
+                            <p class="card-text text-muted">تدريب عملي على أساسيات HTML5 و Bootstrap لمشاريع الطلاب.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-end">
+                            <a href="event.html" class="btn btn-primary btn-sm">التفاصيل الكاملة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/ندوة امن سيبراني.jpg" class="card-img-top" alt="فعالية 2">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">أكاديمي</span>
+                            <h5 class="card-title">ندوة الأمن السيبراني وحماية البيانات</h5>
+                            <p class="card-text text-muted">محاضرة تفاعلية عبر الإنترنت تناقش التهديدات البرمجية الحديثة.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-end">
+                            <a href="event1.html" class="btn btn-primary btn-sm">التفاصيل الكاملة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/مسابقة برمجية.jpg" class="card-img-top" alt="فعالية 3">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">رياضة برمجية</span>
+                            <h5 class="card-title">مسابقة البرمجة الجامعية السنوية</h5>
+                            <p class="card-text text-muted">تحديات حل المشكلات والخوارزميات لطلاب البرمجة والهندسة.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-end">
+                            <a href="event2.html" class="btn btn-primary btn-sm">التفاصيل الكاملة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- التذييل (Footer) -->
+    <footer class="bg-dark text-white pt-4 pb-3 mt-auto">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-uppercase fw-bold">دليل فعاليات SVU</h5>
+                    <p class="small">منصة جامعة افتراضية تسهل على الطلاب متابعة الأنشطة الأكاديمية والفعاليات أولاً بأول.</p>
+                </div>
+                <div class="col-md-6 mb-3 text-md-end">
+                    <h5>روابط تواصل</h5>
+                    <p class="small mb-1">البريد الإلكتروني: info@svuonline.org</p>
+                    <p class="small">حقوق النشر &copy; 2026 - جميع الحقوق محفوظة للجامعة الافتراضية السورية.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
